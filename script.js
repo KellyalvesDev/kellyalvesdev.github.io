@@ -26,8 +26,10 @@ function sendForm(e) {
   const nome = inputs[0].value;
   const email = inputs[1].value;
   const msg = inputs[2].value;
-  const mailto = `mailto:kellytalvesp@gmail.com?subject=Contato via site - ${encodeURIComponent(nome)}&body=${encodeURIComponent(`De: ${nome}\nE-mail: ${email}\n\n${msg}`)}`;
-  window.location.href = mailto;
+
+  const texto = `Olá Kelly! 👋\n\nMeu nome é ${nome}\nE-mail: ${email}\n\n${msg}`;
+  const url = `https://wa.me/5562991008898?text=${encodeURIComponent(texto)}`;
+  window.open(url, '_blank');
 }
 
 // Animate skill bars on scroll
