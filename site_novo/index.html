@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelly Pitaluga — Full Stack Dev & Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">KP</span>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="btn-cta" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Fale comigo</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Disponível para oportunidades</div>
+      <h1 class="hero-title">
+        <span class="line">Kelly</span>
+        <span class="line accent">Pitaluga</span>
+      </h1>
+      <p class="hero-sub">Full Stack Developer Java<br/><em>& Designer Gráfico</em></p>
+      <p class="hero-desc">
+        Construo aplicações web completas — do back-end em Java e Spring Boot 
+        até interfaces responsivas com HTML, CSS e JavaScript. 
+        Trago o olhar de designer para cada linha de código.
+      </p>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn-primary">Ver projetos</a>
+        <a href="https://github.com/KellyalvesDev" target="_blank" class="btn-ghost">GitHub →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">7+</span><span class="stat-l">Projetos</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-n">2</span><span class="stat-l">Stacks</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-n">4+</span><span class="stat-l">Anos em Marketing</span></div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <img src="perfiill.jpg" alt="Kelly Pitaluga" class="hero-photo" />
+      <div class="hero-tag tag-1">Java ☕</div>
+      <div class="hero-tag tag-2">Spring Boot 🍃</div>
+      <div class="hero-tag tag-3">Figma ✏️</div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section sobre" id="sobre">
+    <div class="section-inner">
+      <div class="sobre-text">
+        <span class="label">Quem sou eu</span>
+        <h2>Desenvolvedora com<br/><span class="accent">olho de designer</span></h2>
+        <p>
+          Em transição de carreira para tecnologia, cursando <strong>Desenvolvimento Full Stack Java</strong> 
+          na EBAC. Formada em Administração pela UNOPAR, com experiência sólida em marketing digital, 
+          design gráfico e gestão de projetos criativos.
+        </p>
+        <p>
+          Trago a visão analítica da gestão e a sensibilidade visual do design para escrever código 
+          limpo, interfaces funcionais e experiências que realmente conectam com as pessoas.
+        </p>
+        <div class="sobre-chips">
+          <span class="chip">Anápolis, GO</span>
+          <span class="chip">Aberta a remoto</span>
+          <span class="chip">Cursando EBAC 2025</span>
+        </div>
+      </div>
+      <div class="sobre-links">
+        <a href="https://www.linkedin.com/in/kelly-tauane-alves-pitaluga-68b0a4212/" target="_blank" class="link-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/KellyalvesDev" target="_blank" class="link-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.behance.net/Kellypitalugaa" target="_blank" class="link-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 1.202.791 1.856 1.865 1.856.769 0 1.275-.43 1.47-1.016l2.42.19zM15.971 13h4.06c-.064-1.295-.73-1.964-1.921-1.964-1.16 0-1.986.717-2.139 1.964zM6.647 7.5c.992 0 1.981.337 2.577 1.088.47.6.694 1.286.694 2.013 0 1.316-.665 2.13-1.672 2.528 1.264.375 2.024 1.341 2.024 2.752 0 1.975-1.432 3.619-4.034 3.619H1V7.5h5.647zM5 10.82h1.44c.778 0 1.207-.4 1.207-1.13 0-.745-.44-1.124-1.194-1.124H5v2.254zm0 5.003h1.603c.924 0 1.422-.453 1.422-1.287 0-.847-.52-1.313-1.43-1.313H5v2.6z"/></svg>
+          Behance
+        </a>
+        <a href="mailto:kellytalvesp@gmail.com" class="link-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          E-mail
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills-section" id="skills">
+    <div class="section-inner">
+      <span class="label">O que eu domino</span>
+      <h2>Stack <span class="accent">Técnica</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-icon">⚙️</div>
+          <h3>Back-End</h3>
+          <ul>
+            <li><span class="skill-bar" style="--w:75%"></span>Java</li>
+            <li><span class="skill-bar" style="--w:65%"></span>Spring Boot</li>
+            <li><span class="skill-bar" style="--w:60%"></span>MySQL / SQL</li>
+            <li><span class="skill-bar" style="--w:50%"></span>API REST</li>
+            <li><span class="skill-bar" style="--w:45%"></span>Arquitetura MVC</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">🖥️</div>
+          <h3>Front-End</h3>
+          <ul>
+            <li><span class="skill-bar" style="--w:85%"></span>HTML5 / CSS3</li>
+            <li><span class="skill-bar" style="--w:65%"></span>JavaScript</li>
+            <li><span class="skill-bar" style="--w:70%"></span>Design Responsivo</li>
+            <li><span class="skill-bar" style="--w:55%"></span>Flexbox / CSS Grid</li>
+            <li><span class="skill-bar" style="--w:40%"></span>React (iniciante)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">🎨</div>
+          <h3>Design</h3>
+          <ul>
+            <li><span class="skill-bar" style="--w:90%"></span>Figma</li>
+            <li><span class="skill-bar" style="--w:88%"></span>Adobe Illustrator</li>
+            <li><span class="skill-bar" style="--w:85%"></span>Adobe Photoshop</li>
+            <li><span class="skill-bar" style="--w:80%"></span>Canva</li>
+            <li><span class="skill-bar" style="--w:75%"></span>Identidade Visual</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">🛠️</div>
+          <h3>Ferramentas</h3>
+          <ul>
+            <li><span class="skill-bar" style="--w:75%"></span>Git / GitHub</li>
+            <li><span class="skill-bar" style="--w:60%"></span>Scrum / Kanban</li>
+            <li><span class="skill-bar" style="--w:70%"></span>Google Ads / Meta Ads</li>
+            <li><span class="skill-bar" style="--w:80%"></span>Excel Avançado</li>
+            <li><span class="skill-bar" style="--w:65%"></span>CRM (Facilita)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section projetos-section" id="projetos">
+    <div class="section-inner">
+      <span class="label">O que já construí</span>
+      <h2>Projetos <span class="accent">em Destaque</span></h2>
+
+      <!-- TABS -->
+      <div class="proj-tabs">
+        <button class="proj-tab active" onclick="filterProj('todos', this)">Todos</button>
+        <button class="proj-tab" onclick="filterProj('dev', this)">Dev</button>
+        <button class="proj-tab" onclick="filterProj('design', this)">Design</button>
+      </div>
+
+      <div class="proj-grid" id="proj-grid">
+
+        <div class="proj-card featured" data-cat="dev">
+          <div class="proj-img-wrap">
+            <img src="kaori-capa.png" alt="Kaori Paper" />
+            <div class="proj-overlay">
+              <a href="https://kaoripaper.netlify.app/" target="_blank" class="proj-link">Visitar site →</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-tag tag-dev">Dev</span>
+            <h3>Kaori Paper — E-commerce de Papelaria 🌸</h3>
+            <p>Loja virtual completa com catálogo de produtos, carrinho, lista de favoritos, sistema de pedidos via WhatsApp e painel administrativo. Dados em tempo real com Firebase Firestore.</p>
+            <div class="proj-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Firebase</span><span>Netlify</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="dev">
+          <div class="proj-img-wrap">
+            <img src="agencia criativa web 1.png" alt="Criativa Web" />
+            <div class="proj-overlay">
+              <a href="https://kellyalvesdev.github.io/agencia-criativa-web/" target="_blank" class="proj-link">Visitar site →</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-tag tag-dev">Dev</span>
+            <h3>Agência Criativa Web</h3>
+            <p>Site institucional completo com HTML, CSS e JavaScript. Layout moderno, responsivo e voltado para conversão.</p>
+            <div class="proj-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="dev">
+          <div class="proj-img-wrap">
+            <img src="ronaldo.jpeg" alt="Corretor Ronaldo Peixoto" />
+            <div class="proj-overlay">
+              <a href="https://kellyalvesdev.github.io/Corretor-Ronaldo-Peixoto/index.html" target="_blank" class="proj-link">Visitar site →</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-tag tag-dev">Dev</span>
+            <h3>Site Corretor Ronaldo Peixoto</h3>
+            <p>Site de catálogo de imóveis com foco em conversão de vendas. Design que transmite credibilidade e segurança.</p>
+            <div class="proj-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card featured" data-cat="design">
+          <div class="proj-img-wrap">
+            <img src="bee creat.png" alt="Bee Creat" />
+            <div class="proj-overlay">
+              <a href="https://www.behance.net/gallery/230724715/Rebranding-Bee-creat" target="_blank" class="proj-link">Ver no Behance →</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-tag tag-design">Design</span>
+            <h3>Rebranding — Bee Creat</h3>
+            <p>Rebranding completo e aplicação de marca para agência de marketing digital. Nova identidade visual com manual de uso.</p>
+            <div class="proj-tech">
+              <span>Branding</span><span>Illustrator</span><span>Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="design">
+          <div class="proj-img-wrap">
+            <img src="Amaro.png" alt="AMARO" />
+            <div class="proj-overlay">
+              <a href="https://www.behance.net/gallery/227790777/Tcc-eBAC" target="_blank" class="proj-link">Ver no Behance →</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-tag tag-design">Design</span>
+            <h3>ID Visual — AMARO</h3>
+            <p>Identidade visual e aplicação de marca para lançamento de moda feminina. TCC EBAC — Design Gráfico.</p>
+            <div class="proj-tech">
+              <span>Branding</span><span>Photoshop</span><span>Illustrator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="design">
+          <div class="proj-img-wrap">
+            <img src="oliva studio.png" alt="Oliva Studio" />
+            <div class="proj-overlay">
+              <a href="https://www.behance.net/gallery/231779913/Teste-de-manual-de-identidade-(-Marca-Ficticia-)" target="_blank" class="proj-link">Ver no Behance →</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-tag tag-design">Design</span>
+            <h3>ID Visual — Oliva Studio</h3>
+            <p>Design intimista e autêntico para agência criativa. Manual completo de identidade visual para marca fictícia.</p>
+            <div class="proj-tech">
+              <span>Branding</span><span>Illustrator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="design">
+          <div class="proj-img-wrap">
+            <img src="floratta logo 2.png" alt="Floratta Café" />
+            <div class="proj-overlay">
+              <a href="https://www.behance.net/gallery/234959563/Id-visual-Floratta-caf-bistro-(-portifolio)" target="_blank" class="proj-link">Ver no Behance →</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-tag tag-design">Design</span>
+            <h3>ID Visual — Floratta Café & Bistrô</h3>
+            <p>Estética casual, minimalista e artesanal para cafeteria moderna. Paleta, tipografia e aplicações completas.</p>
+            <div class="proj-tech">
+              <span>Branding</span><span>Illustrator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="design">
+          <div class="proj-img-wrap">
+            <img src="Kelly Alves.png" alt="Kelly Alves" />
+            <div class="proj-overlay">
+              <a href="https://www.behance.net/gallery/234959227/Logo-ID-pessoal-ideias" target="_blank" class="proj-link">Ver no Behance →</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-tag tag-design">Design</span>
+            <h3>ID Pessoal — Kelly Alves</h3>
+            <p>Logo e identidade visual pessoal para portfólio de designer. Criatividade e clareza na apresentação profissional.</p>
+            <div class="proj-tech">
+              <span>Branding</span><span>Illustrator</span><span>Figma</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contato-section" id="contato">
+    <div class="section-inner contato-inner">
+      <div class="contato-text">
+        <span class="label">Bora conversar?</span>
+        <h2>Entre em <span class="accent">Contato</span></h2>
+        <p>Estou aberta a oportunidades de emprego, freelas e colaborações. Se quiser bater um papo sobre tecnologia, design ou projetos, me manda uma mensagem!</p>
+        <div class="contato-links">
+          <a href="mailto:kellytalvesp@gmail.com">📧 kellytalvesp@gmail.com</a>
+          <a href="https://linkedin.com/in/kelly-tauane-alves-pitaluga" target="_blank">🔗 LinkedIn</a>
+          <a href="https://github.com/kellyalvesDev" target="_blank">💻 GitHub</a>
+          <a href="https://www.behance.net/Kellypitalugaa" target="_blank">🎨 Behance</a>
+        </div>
+      </div>
+      <form class="contato-form" onsubmit="sendForm(event)">
+        <div class="form-group">
+          <label>Nome</label>
+          <input type="text" placeholder="Seu nome completo" required />
+        </div>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Mensagem</label>
+          <textarea rows="5" placeholder="Conta mais sobre o projeto ou oportunidade..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar mensagem ✉️</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="nav-logo">KP</span>
+      <p>© 2025 Kelly Pitaluga — Feito com ☕ Java e muito CSS</p>
+      <div class="footer-socials">
+        <a href="https://github.com/kellyalvesDev" target="_blank">GitHub</a>
+        <a href="https://www.behance.net/Kellypitalugaa" target="_blank">Behance</a>
+        <a href="https://linkedin.com/in/kelly-tauane-alves-pitaluga" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
