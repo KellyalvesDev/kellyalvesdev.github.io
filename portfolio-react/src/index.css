@@ -1,0 +1,85 @@
+/* ============================================================
+   KELLY PITALUGA — Portfolio 2025
+   Aesthetic: Editorial tech — dark base, warm accents, typographic
+   ============================================================ */
+
+:root {
+  --bg: #0d0d0f;
+  --bg2: #131316;
+  --bg3: #1a1a1f;
+  --card: #18181d;
+  --border: rgba(255,255,255,0.07);
+  --text: #e8e6e0;
+  --muted: #8a8882;
+  --accent: #e8c547;
+  --accent2: #5b8df6;
+  --green: #4ade80;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --radius: 16px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.accent { color: var(--accent); }
+
+.label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.section {
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 2.5rem;
+  line-height: 1.1;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--accent);
+  color: #0d0d0f;
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+.btn-primary:hover {
+  background: #f0d063;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(232,197,71,0.3);
+}

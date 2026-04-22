@@ -1,0 +1,44 @@
+.sobre { background: var(--bg2); }
+
+.sobre-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.sobre-text p { color: var(--muted); margin-bottom: 1rem; line-height: 1.75; }
+.sobre-text strong { color: var(--text); }
+
+.sobre-chips { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.chip {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.sobre-links { display: flex; flex-direction: column; gap: 1rem; padding-top: 4rem; }
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.link-card svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
+.link-card:hover { border-color: var(--accent); transform: translateX(4px); color: var(--accent); }
+
+@media (max-width: 768px) {
+  .sobre-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .sobre-links { padding-top: 0; }
+}
